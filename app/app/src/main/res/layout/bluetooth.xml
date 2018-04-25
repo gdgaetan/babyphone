@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="0.1">
+
+    <ListView
+        android:id="@+id/in"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:stackFromBottom="true"
+        android:visibility="gone"
+        android:transcriptMode="alwaysScroll" />
+
+    <LinearLayout
+        android:id="@+id/send_text_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/edit_text_out"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/button_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03"
+        android:paddingTop="40dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.03"
+            android:paddingTop="40dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/toolbar_btn_connect"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/toolbarButton"
+                android:src="@drawable/toolbar_btn_connect"
+                android:visibility="gone"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:layout_weight="0.01"
+        android:weightSum="1">
+        <TextView android:id="@+id/btstatus"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btstatus_not_connected"
+            android:background="#40ffffff"
+            />
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="189dp"
+            android:layout_height="60dp"
+            android:onClick="signIn"
+            android:text="connexion"
+            android:background="#3f51b5"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:layout_weight="0" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="420dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:layout_weight="0.03"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="121dp"
+            android:layout_height="117dp"
+            android:layout_weight="0.04"
+            android:src="@drawable/logo_univ" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:src="@drawable/sopra_logo"
+            android:layout_weight="0.33" />
+    </LinearLayout>
+
+
+</LinearLayout>
+

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="app.babyphone.SignUpActivity"
+    tools:context="com.example.gaetan.babyphoneapp.SignUpActivity"
     android:orientation="vertical"
     android:weightSum="10">
 
@@ -101,7 +101,7 @@
                 android:layout_width="189dp"
                 android:layout_height="60dp"
                 android:onClick="check"
-                android:text="envoyer"
+                android:text="s'inscrire"
                 android:background="#3f51b5"
                 android:textColor="#ffffff"
                 android:textSize="20dp"

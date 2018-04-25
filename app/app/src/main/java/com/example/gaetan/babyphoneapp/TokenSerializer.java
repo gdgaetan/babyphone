@@ -1,4 +1,4 @@
-package app.babyphone;
+package com.example.gaetan.babyphoneapp;
 
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonDeserializer;

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="app.babyphone.SignInActivity"
+    tools:context="com.example.gaetan.babyphoneapp.SignInActivity"
     android:orientation="vertical"
     android:weightSum="10">
 
@@ -83,9 +83,9 @@
             <Button
                 android:id="@+id/loginButton"
                 android:layout_width="189dp"
-                android:layout_height="60dp"
+                android:layout_height="40dp"
                 android:onClick="check"
-                android:text="envoyer"
+                android:text="se connecter"
                 android:background="#3f51b5"
                 android:textColor="#ffffff"
                 android:textSize="20dp"
@@ -94,13 +94,25 @@
             <Button
                 android:id="@+id/singUpButton"
                 android:layout_width="189dp"
-                android:layout_height="60dp"
+                android:layout_height="40dp"
                 android:onClick="signUp"
                 android:text="inscription"
                 android:background="#3f51b5"
                 android:textColor="#ffffff"
                 android:textSize="20dp"
                 android:layout_weight="0" />
+            <Button
+                android:id="@+id/wifiButton"
+                android:layout_width="189dp"
+                android:layout_height="40dp"
+                android:onClick="wifi"
+                android:text="wifi"
+                android:background="#3f51b5"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:layout_weight="0" />
+
         </LinearLayout>
 
 
